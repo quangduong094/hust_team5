@@ -25,3 +25,4 @@ To watch some training videos, visit http://www.youtube.com/user/c9ide
 
 ##チームメンーバ
 -20122757 Trần Duy Tùng
+-20121458 Nguyen Quang Duong
