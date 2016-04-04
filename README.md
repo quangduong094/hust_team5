@@ -28,3 +28,4 @@ To watch some training videos, visit http://www.youtube.com/user/c9ide
 -20121458 Nguyen Quang Duong
 -20122352 Nguyễn Thế Anh Sơn
 -20122758 Trần Thanh Tùng
+-20122649 Nguyen Quoc Truong
