@@ -141,8 +141,8 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
-  height: 80px;
-  width: 80px;
+  max-height: 80px;
+  max-width: 80px;
 }
 
 .gravatar_edit {
@@ -241,7 +241,7 @@ input {
 
 /* microposts */
 
-.microposts {
+.microposts{
   list-style: none;
   padding: 0;
   li {
@@ -252,7 +252,7 @@ input {
     margin-top: 5em;
     padding-top: 0;
   }
-  .content {
+  .title {
     display: block;
     margin-left: 60px;
     img {
