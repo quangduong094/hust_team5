@@ -4,7 +4,7 @@ class PictureUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  include CarrierWave::MiniMagick
+  #include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -18,7 +18,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   # def cache_dir
   #   "#{Rails.root}/public/uploads/tmp"
   # end
-  process resize_to_limit: [400, 400]
+  # process resize_to_limit: [400, 400]
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
   #   # For Rails 3.1+ asset pipeline compatibility:
