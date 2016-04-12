@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       get :following, :followers
     end
   end
-  resources :images , only: [:create, :destroy, :edit]
+  resources :images
   resources :relationships, only: [:create, :destroy]
   
   # Example of regular route:

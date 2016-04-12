@@ -4,13 +4,15 @@
     <span class="title">
     	<%= image.title %>
     	<% if image.file? %>
-    	<%= image_tag( image.file.url ,height: '300' , width: '400')%>
+    	<%= link_to image_tag( image.file.url ,height: '300' , width: '400'), image%>
     	<%end%>
    	</span>
     <span class="timestamp">
     Posted <%= time_tag(image.created_at) %> ago.
     <% if current_user?(image.user) %>
+		<%= link_to "edit", edit_image_path(image.id) %>
 		<%= link_to "delete", image, method: :delete, data: { confirm: "You sure?" } %>
+		
 	<% end %>
     </span>
     
