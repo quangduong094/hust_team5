@@ -11,7 +11,7 @@ class ImagesController < ApplicationController
 			redirect_to root_url
 		else
 			@feed_items = []
-			render 'static_pages/home'
+			redirect_to request.referrer || @current_user
 		end
     end
 
