@@ -3,13 +3,15 @@
     <h3>Image</h3>
     <ol class="microposts">
     <%= render @image %>
-    <div id="comment-form">
-    	<%= render 'shared/comment_form' if logged_in?%>
-    </div>
     </ol>
+    <div class="">
+        <%= render 'like_form' if logged_in?%>
+    </div>
+    <div class="">
+        <%= render 'shared/comment_form' if logged_in?%>
+    </div>
     <div class="col-md-8">
         <% if @image.comments.any? %>
-          <h3>Comment:  (<%= @image.comments.count %>)</h3>
           <ol class="microposts">
           	<div id = 'comments'>
     	        <%= render @comments %>

@@ -1,0 +1,9 @@
+<%= image.likes.count %> likes
+<%= form_for([ image, image.likes.build], remote: true) do |f| %>
+     <%= render 'shared/error_messages', object: f.object %>
+   <%= f.hidden_field :user_id %>
+   <%= f.hidden_field :image_id %>
+ <div>
+    </div>
+   <%= f.submit "like", class: "btn btn-primary" %>
+<% end %>

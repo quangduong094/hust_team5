@@ -23,6 +23,8 @@ class ImagesController < ApplicationController
     
     def show
     	@image = Image.find(params[:id])
+    	@like = @image.likes.build
+	  	@likes = @image.likes
     	@comment = @image.comments.build
   		@comments = @image.comments.paginate(page: params[:page])
     end
