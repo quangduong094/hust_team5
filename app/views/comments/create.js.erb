@@ -1,0 +1,2 @@
+$("#image-<%= @image.id%> #comments").prepend("<%= escape_javascript(render('comments/comment', comment: @comment)) %>")
+$("#image-<%= @image.id%> #comment_content").val("");

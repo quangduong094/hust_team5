@@ -22,11 +22,12 @@ class ImagesController < ApplicationController
     end
     
     def show
-    	@image = Image.find(params[:id])	
+    	@image = Image.find(params[:id])
+    	@comment = @image.comments.build
+  		@comments = @image.comments.paginate(page: params[:page])
     end
 
 	def edit
-    	# @user = User.find(params[:id])
     	@image = Image.find(params[:id])
   	end
 

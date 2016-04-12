@@ -21,7 +21,9 @@ Rails.application.routes.draw do
   end
   resources :images
   resources :relationships, only: [:create, :destroy]
-  
+  resources :images do
+    resources :comments, :only => [:create, :new, :destroy]
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
