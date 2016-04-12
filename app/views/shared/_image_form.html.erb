@@ -1,5 +1,5 @@
 <%= form_for(@image) do |f| %>
-	<%= render 'shared/error_messages', object: f.object %>
+	<%= render 'shared/error_messages' , object: f.object %>
 	<div class="field">
 		<%= f.label :title %>
 		<%= f.text_field :title, placeholder: "Compose new title image..." %>

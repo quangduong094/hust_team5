@@ -1,3 +1,4 @@
+<% if current_user.following?(@image.user) || current_user == @image.user%>
 <div id="like_form">
     <%if @image.liked_by?(current_user) %>
         <%= render 'unlike' %>
@@ -5,3 +6,4 @@
         <%= render 'like',  image: @image %>
     <% end %>
 </div>
+<%end%>

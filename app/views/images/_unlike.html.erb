@@ -1,4 +1,3 @@
-<%= @image.likes.count %> likes
 <%= form_for(@image.likes.find_by(user_id: current_user.id), html: { method: :delete }, remote: true) do |f| %>
 <%= f.submit "Unlike", class: "btn btn-primary" %>
 <% end %> 

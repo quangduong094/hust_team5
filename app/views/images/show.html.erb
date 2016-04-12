@@ -4,6 +4,9 @@
     <ol class="microposts">
     <%= render @image %>
     </ol>
+    <span><%= @image.likes.count %> likes</span>
+    <span style = "margin-left: 20px"><%= @image.comments.count %> comments</span>
+    
     <div class="">
         <%= render 'like_form' if logged_in?%>
     </div>

@@ -1,6 +1,6 @@
 <% if current_user.following?(@image.user) || current_user == @image.user%>
 	<%= form_for [ @image, @comment], remote: true do |f| %>
-		<%= render 'shared/error_messages', object: f.object %>
+		<%= render 'shared/error_messages' , object: f.object %>
 		<%= f.text_area :content, placeholder: "Nhap vao comment" %>
 		<%= f.submit "Comment", class: "btn btn-primary" %>
 	<% end %>
